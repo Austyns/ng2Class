@@ -15,7 +15,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Serving
 
-Run `npm install` to install all the necessary node modules for the project.
+Run `npm install` to install all the necessary node modules for the project. then run `ng serve`
 
 ## Running unit tests
 
