@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+// Import AngularFireModule and firebase configurations
+import { AngularFireModule } from 'angularfire2/index';
+import {firebaseConfig} from '../environments/firebase.config';
+
 import { AppComponent } from './app.component';
 import { CrudComponentComponent } from './crud/crud-component/crud-component.component';
 
@@ -14,7 +18,8 @@ import { CrudComponentComponent } from './crud/crud-component/crud-component.com
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
